@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="MenuStack" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #505050;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane fx:id="MenuPane" prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <Text layoutX="25.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white;" text="Graph Algorithm">
+               <font>
+                  <Font name="Gill Sans MT Condensed" size="61.0" />
+               </font>
+            </Text>
+            <StackPane fx:id="AU" layoutX="350.0" layoutY="150.0" prefHeight="100.0" prefWidth="100.0">
+               <children>
+                  <Circle fill="WHITE" radius="46.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <Label text="AU">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane fx:id="EG" layoutX="100.0" layoutY="270.0" prefHeight="100.0" prefWidth="100.0">
+               <children>
+                  <Circle fill="WHITE" radius="46.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <Label text="EG">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane fx:id="DK" layoutX="220.0" layoutY="500.0" prefHeight="100.0" prefWidth="100.0">
+               <children>
+                  <Circle fill="WHITE" radius="46.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <Label text="DK">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane fx:id="BE" layoutX="500.0" layoutY="500.0" prefHeight="100.0" prefWidth="100.0">
+               <children>
+                  <Circle fill="WHITE" radius="46.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <Label text="BE">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane fx:id="HK" layoutX="600.0" layoutY="270.0" prefHeight="100.0" prefWidth="100.0">
+               <children>
+                  <Circle fill="WHITE" radius="46.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <Label text="HK">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <Button layoutX="1108.0" layoutY="187.0" mnemonicParsing="false" onAction="#resetButton" style="-fx-background-color: RED;" text="Reset" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans MT Condensed" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="checkButton" layoutX="1039.0" layoutY="187.0" mnemonicParsing="false" onAction="#runFunction" text="Check">
+               <font>
+                  <Font name="Gill Sans MT Condensed" size="19.0" />
+               </font>
+            </Button>
+            <CheckBox fx:id="checkConnect" focusTraversable="false" layoutX="821.0" layoutY="288.0" mnemonicParsing="false" mouseTransparent="true" text="Strongly Connected" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans MT Condensed" size="19.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="checkCyclic" layoutX="821.0" layoutY="328.0" mnemonicParsing="false" mouseTransparent="true" text="Cyclic" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans MT Condensed" size="19.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="checkShort" layoutX="821.0" layoutY="368.0" mnemonicParsing="false" mouseTransparent="true" text="Shortest Path" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans MT Condensed" size="19.0" />
+               </font>
+            </CheckBox>
+            <ChoiceBox fx:id="left" layoutX="820.0" layoutY="105.0" prefHeight="26.0" prefWidth="75.0" />
+            <ChoiceBox fx:id="right" layoutX="953.0" layoutY="105.0" prefHeight="26.0" prefWidth="75.0" />
+            <ChoiceBox fx:id="choiceBox" layoutX="821.0" layoutY="187.0" prefHeight="38.0" prefWidth="210.0" />
+            <Label layoutX="822.0" layoutY="148.0" prefHeight="18.0" prefWidth="150.0" text="Select a function :" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans MT Condensed" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="next" layoutX="674.0" layoutY="657.0" mnemonicParsing="false" onAction="#nextMap" text="Next">
+               <font>
+                  <Font name="Gill Sans MT Condensed" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="previous" layoutX="598.0" layoutY="657.0" mnemonicParsing="false" onAction="#previousMap" text="Previous">
+               <font>
+                  <Font name="Gill Sans MT Condensed" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="913.0" layoutY="106.0" text="to" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans MT Condensed" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="820.0" layoutY="61.0" prefHeight="18.0" prefWidth="150.0" text="Choose vertex :" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans MT Condensed" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="821.0" layoutY="251.0" prefHeight="18.0" prefWidth="150.0" text="Graph Status" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans MT Condensed" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
